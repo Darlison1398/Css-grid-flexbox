@@ -1,0 +1,178 @@
+/*    Início  */
+
+/*.container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns:  50px auto 10%;
+    height: 25vh;
+    grid-template-rows: 70% 30%;
+    gap: 5px;
+}
+
+.container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}*/
+
+
+/*  template area  */
+/*.container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    'header header header header'
+    'sidebar content content content'
+    'footer footer footer footer' ;
+}
+
+.container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+
+#header{
+    grid-area: header;
+}
+
+#sidebar{
+    grid-area: sidebar;
+    height: 50vh;
+}
+
+#content{
+    grid-area: content;
+}
+
+#footer{
+    grid-area: footer;
+}/*
+
+
+/* Alinhamento no grid  */
+/*.container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    height: 50vh;
+    justify-content: center;  /* horizontal */
+   /* align-items: center;   /* vertical  */
+
+/*}
+
+.container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}*/
+
+/*  Itens  */
+/*.container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+#item-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#item-2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#item-3{
+    justify-self: end;
+    height: 200px;
+}
+
+#item-5{
+    justify-self: start;
+    height: 200px;
+}
+
+#item-4{
+    align-self: center;
+}
+
+#item-6{
+    align-self: end;
+}*/
+
+/*****************  FlexBox   *************/
+/*   Com o flexbox, conseguimos atinguir resultados rapidamente e de forma mais organizada do que usar o "position" */
+
+body{
+    padding-bottom: 500px;
+}
+.container{
+    background-color: #EEF;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between; /* alinhamento horizontal  */
+    align-items: center;     /*  alinhamento vertical  */
+    flex-wrap: wrap;
+}
+/*
+.item{
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+}*/
+
+.box{
+    background-color: #cccc;
+    border: 2px solid blue;
+    height: 50px;
+   /* flex-basis: 30px;
+    flex-grow: 1;
+    flex-shrink: 1;*/
+    flex: 1 1 50px;
+}
+
+/*
+#item-1{
+    flex-grow: 2;
+}
+
+#item-2,
+#item-3{
+    flex-grow: 1;
+}
+
+
+#item-2{
+    flex-basis: 100px;
+}
+
+
+#item-3{
+    flex-shrink: 2;
+}*/
+
+#item-2{
+    order: 1;
+}
